@@ -21,7 +21,8 @@ app.config(['$routeProvider',
             .when('/dashboard', {
                 title: 'Dashboard',
                 templateUrl: 'partials/dashboard.html',
-                controller: 'authCtrl'
+                controller: 'authCtrl',
+                requireLogin: true
             })
             .when('/', {
                 title: 'Login',
